@@ -1,0 +1,20 @@
+Defination and Usage:
+-------------------------------------------------------------------------
+	A session is a way to store information (in variables) to be used across 
+multiple pages. Unlike a cookie, the information is not stored on the users 
+computer. By default, session variables last until the user closes the browser.
+
+
+Syntax:
+-------------------------------------------------------------------------
+create	=> 
+		session_start();
+		$_SESSION['session_key'] = 'session value here..';
+
+checkout	=> 
+		session_start();
+		$_SESSION['session_key'];
+
+destroy	=> 
+		session_start();
+		session_destroy();

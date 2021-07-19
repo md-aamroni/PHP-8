@@ -1,0 +1,13 @@
+Defination and Usage:
+-------------------------------------------------------------------------
+	A cookie is often used to identify a user. A cookie is a small file 
+that the server embeds on the user's computer. Each time the same computer 
+requests a page with a browser, it will send the cookie too. With PHP, you 
+can both create and retrieve cookie values.
+
+
+Syntax:
+-------------------------------------------------------------------------
+set    => setcookie(name, value, expire, path, domain, secure, httponly);
+get    => $_COOKIE['cookie_name'];
+delete => setcookie("cookie_name", "", time() - 3600);
